@@ -3,6 +3,7 @@ name: Build & Push Docker image
 on:
   push:
     branches: ["main"]
+    
 
 env:
   IMAGE_NAME: mimosa1234/cicd-api

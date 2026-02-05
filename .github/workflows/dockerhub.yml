@@ -6,7 +6,7 @@ on:
     
 
 env:
-  IMAGE_NAME: mimosa1234/cicd-api
+  IMAGE_NAME: mimosay/cicd-api
 
 jobs:
   docker:

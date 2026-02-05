@@ -19,7 +19,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             set -e
-            cd ~/cicd-api
-            docker compose -f docker-compose.prod.yml pull
-            docker compose -f docker-compose.prod.yml up -d
+            cd ~/deploy/cicd-api
+            git pull
+            docker-compose -f docker-compose.prod.yml pull
+            docker-compose -f docker-compose.prod.yml down
+            docker-compose -f docker-compose.prod.yml up -d
             docker image prune -f

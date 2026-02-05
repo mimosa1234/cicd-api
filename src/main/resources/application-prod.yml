@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/cicd
+    username: cicd
+    password: cicd
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
